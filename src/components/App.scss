@@ -1,0 +1,25 @@
+.main-header {
+    position: fixed;
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    align-items: center;
+    top: 0;
+    left: 0;
+    background-color: #3ca8da;
+    width: 100%;
+    & ul {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+        grid-gap: 10px;
+        align-items: center;
+        justify-items: center;
+        padding: 10px;
+    }
+    & .btn {
+        font-size: 1rem;
+        color: #fff;
+        border: #fff solid 0.5px;
+        border-radius: 1.5rem;
+        padding: 0.5rem 1rem;
+    }
+}

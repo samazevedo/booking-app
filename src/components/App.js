@@ -4,27 +4,31 @@ import BookingsPage from '../pages/Bookings/BookingsPage'
 import BookablesPage from '../pages/Bookables/BookablesPage'
 import UsersPage from '../pages/Users/UsersPage'
 import UserPicker from '../components/Users/UserPicker'
-import './App.css'
+import { FaCalendarAlt, FaDoorOpen, FaUsers } from 'react-icons/fa'
+import './App.scss'
 
 export default function App() {
     return (
         <div className='App'>
-            <header>
+            <header className='main-header'>
                 <nav>
                     <ul>
                         <li>
                             <Link to='/bookings' className='btn btn-header'>
-                                <span>Bookings</span>
+                                <FaCalendarAlt />
+                                <span> Bookings</span>
                             </Link>
                         </li>
                         <li>
                             <Link to='/bookables' className='btn btn-header'>
-                                <span>Bookables</span>
+                                <FaDoorOpen />
+                                <span> Bookables</span>
                             </Link>
                         </li>
                         <li>
                             <Link to='/users' className='btn btn-header'>
-                                <span>Users</span>
+                                <FaUsers />
+                                <span> Users</span>
                             </Link>
                         </li>
                     </ul>
