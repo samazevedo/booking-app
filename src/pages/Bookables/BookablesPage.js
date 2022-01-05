@@ -1,9 +1,11 @@
 import React from 'react'
+import BookablesLlist from '../../components/Bookables/BookableList.component'
+import './BookablesPage.styles.scss'
 
 export default function BookablesPage() {
     return (
-        <div>
-            <h1>BookablesPage</h1>
-        </div>
+        <main className='bookables-page'>
+            <BookablesLlist />
+        </main>
     )
 }

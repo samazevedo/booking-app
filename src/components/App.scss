@@ -7,6 +7,10 @@
     left: 0;
     background-color: #3ca8da;
     width: 100%;
+
+    & nav {
+        margin-top: 2%;
+    }
     & ul {
         display: grid;
         grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
