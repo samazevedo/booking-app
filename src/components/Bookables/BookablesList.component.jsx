@@ -1,5 +1,6 @@
 import React, { useState } from 'react'
 import { bookables } from '../../static.json'
+import './BookablesList.style.scss'
 
 export default function BookablesList() {
     const group = 'Rooms'
@@ -7,7 +8,7 @@ export default function BookablesList() {
     const [bookableIndex, setBookableIndex] = useState(1)
 
     return (
-        <ul classNam='bookables'>
+        <ul className='bookables'>
             {bookablesInGroup.map((b, i) => (
                 <li
                     key={b.title}

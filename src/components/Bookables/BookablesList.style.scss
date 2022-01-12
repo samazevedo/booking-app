@@ -1,0 +1,22 @@
+.bookables {
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    margin: 5%;
+    background-color: antiquewhite;
+}
+.btn {
+    background-color: #888888;
+    font-size: 1rem;
+    color: #ffffff;
+    border: none;
+    border-radius: 1rem;
+    padding: 0.5rem 1rem;
+    margin: 0.5rem;
+    cursor: pointer;
+}
+.selected {
+    & .btn {
+        background-color: #3ca8da;
+    }
+}
