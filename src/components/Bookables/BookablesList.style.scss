@@ -1,19 +1,28 @@
 .bookables {
     display: grid;
     align-items: center;
-    justify-items: center;
-    margin: 5%;
-    background-color: antiquewhite;
+}
+.bookables-box {
+    display: grid;
+    max-width: fit-content;
+    align-items: center;
 }
 .btn {
+    width: 15rem;
     background-color: #888888;
     font-size: 1rem;
     color: #ffffff;
     border: none;
     border-radius: 1rem;
-    padding: 0.5rem 1rem;
-    margin: 0.5rem;
+    padding: 0.5rem 2rem;
+    margin: 0.7rem;
     cursor: pointer;
+    &.next-btn {
+        width: 8rem;
+        background-color: #0c2044;
+        display: flex;
+        align-items: center;
+    }
 }
 .selected {
     & .btn {
