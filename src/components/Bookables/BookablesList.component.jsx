@@ -16,45 +16,7 @@ export default function BookablesList() {
         setBookableIndex((i) => (i + 1) % bookablesInGroup.length)
     }
     return (
-        <Fragment>
-            <div>/*unchanged UI for list of bookables */</div>
-            {bookable && (
-                <div className='item'>
-                    <div className='item-header'>
-                        <h2>{bookable.title}</h2>
-                        <span className='controls'>
-                            <label>
-                                <input
-                                    type='checkbox'
-                                    checked={hasDetails}
-                                    onChange={() =>
-                                        setHasDetails((has) => !has)
-                                    }
-                                />
-                                SHow Details
-                            </label>
-                        </span>
-                    </div>
-                    <p>{bookable.notes}</p>
-                    {hasDetails && (
-                        <div className='item-details'>
-                            <h3>Availability</h3>
-                            <div className='bookable-availability'>
-                                <ul>
-                                    {bookable.days.sort().map((d) => (
-                                        <li key={d}>{d}</li>
-                                    ))}
-                                </ul>
-                                <ul>
-                                    {bookable.sessions.map((s) => (
-                                        <li key={s}>{s}</li>
-                                    ))}
-                                </ul>
-                            </div>
-                        </div>
-                    )}
-                </div>
-            )}
+        <div className='item-box'>
             <div className='bookables-box'>
                 <select
                     value={group}
@@ -92,6 +54,43 @@ export default function BookablesList() {
                     </button>
                 </p>
             </div>
-        </Fragment>
+            {bookable && (
+                <div className='item'>
+                    <div className='item-header'>
+                        <h2>{bookable.title}</h2>
+                        <span className='controls'>
+                            <label>
+                                <input
+                                    type='checkbox'
+                                    checked={hasDetails}
+                                    onChange={() =>
+                                        setHasDetails((has) => !has)
+                                    }
+                                />
+                                SHow Details
+                            </label>
+                        </span>
+                    </div>
+                    <p>{bookable.notes}</p>
+                    {hasDetails && (
+                        <div className='item-details'>
+                            <h3>Availability</h3>
+                            <div className='bookable-availability'>
+                                <ul>
+                                    {bookable.days.sort().map((d) => (
+                                        <li key={d}>{d}</li>
+                                    ))}
+                                </ul>
+                                <ul>
+                                    {bookable.sessions.map((s) => (
+                                        <li key={s}>{s}</li>
+                                    ))}
+                                </ul>
+                            </div>
+                        </div>
+                    )}
+                </div>
+            )}
+        </div>
     )
 }

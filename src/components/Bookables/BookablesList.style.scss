@@ -5,7 +5,10 @@
 .bookables-box {
     display: grid;
     max-width: fit-content;
+    grid-template-rows: 1fr;
     align-items: center;
+    justify-items: center;
+    margin: 2% 5%;
 }
 .btn {
     width: 15rem;
@@ -28,4 +31,12 @@
     & .btn {
         background-color: #3ca8da;
     }
+}
+.item-box {
+    display: flex;
+    flex-wrap: wrap;
+}
+.item-header {
+    background-color: #0c2044;
+    color: #ffffff;
 }
