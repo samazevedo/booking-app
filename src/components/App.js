@@ -3,7 +3,7 @@ import { Routes, Route, Link } from 'react-router-dom'
 import BookingsPage from '../pages/Bookings/BookingsPage'
 import BookablesPage from '../pages/Bookables/BookablesPage'
 import UsersPage from '../pages/Users/UsersPage'
-import UserPicker from '../components/Users/UserPicker'
+import UserPicker from '../components/Users/User-picker/User-picker.component'
 import { FaCalendarAlt, FaDoorOpen, FaUsers } from 'react-icons/fa'
 import './App.scss'
 
